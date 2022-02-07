@@ -1,0 +1,187 @@
+:root {
+    --primary: #6209DB;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.dark-mode {
+    background-color: black !important;
+    color: white !important;
+}
+
+.dark-mode .nav-link {
+    color: white !important;
+}
+
+.dark-mode .fa-bars {
+    color: white !important;
+}
+
+.navbar {
+    min-height: 90px;
+    z-index: 1;
+}
+
+.navbar .btn {
+    padding: .625rem 1.25rem !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.btn {
+    padding: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.content {
+    max-width: 500px;
+}
+
+#hero {
+    height: 750px;
+}
+
+#Acerca {
+    /* height: 350px; */
+    padding: 10px;
+}
+
+#Contacto {
+    padding: 10px;
+    height: 200px;
+}
+
+.navbar-toggler {
+    box-shadow: none;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.step::after {
+    content: "";
+    border-right: 1px solid black;
+    height: 60px;
+    position: absolute;
+    top: 34px;
+    opacity: .2;
+}
+
+@media (max-width: 920px) {
+    .nabvar {
+        position: relative !important;
+    }
+}
+
+  /* Button toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border: 1px solid var(--primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--primary);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: black;
+  }
+  
+  input:focus + .slider {
+    border: 1px solid var(--primary);
+    /* box-shadow: 0 0 7px var(--primary); */
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /* Button toggle */
+
+  .carta {
+      background-color: var(--primary);
+      color: white;
+      box-shadow: 0 0 4px #dcdcdc;
+      border-radius: 15px;
+      padding: 5px;
+      transition-duration: 5s;
+      overflow: hidden; 
+}
+
+  .carta:hover {
+    position: relative;
+    bottom: 10px;
+  }
+
+
+  .card-link {
+    border: 1px solid white !important;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px; 
+    padding: 1px;
+  }
+
+  .card-link:hover{
+      background-color: white;
+      color: var(--primary) !important;
+  }
